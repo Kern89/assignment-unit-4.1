@@ -56,10 +56,16 @@ console.log(getLast(words));
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-function find(value, array) {
-
-}
-
+// function find(value, array) {
+//   for (i=0; i<array.length; i++){
+//     if (find(value, array) === true) {
+//       return true;
+//     }
+//     else return false;
+//   }
+// }
+// console.log('car', words);
+// console.log('teleporter', words);
 // ----------------------
 // Stretch Goals
 // ----------------------
