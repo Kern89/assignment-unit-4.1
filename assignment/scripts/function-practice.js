@@ -56,16 +56,34 @@ console.log(getLast(words));
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-// function find(value, array) {
-//   for (i=0; i<array.length; i++){
-//     if (find(value, array) === true) {
-//       return true;
+let sample = ['sleep','skate','snow','paper','gauge'];
+
+
+function search(list, item) {
+    for (index = 0; index < list.length; index += 1) {
+      if (list[index] === item) {
+        return true;
+      }
+    }
+    return false;
+}
+///browser test fails but function appears to work.
+console.log(search(sample, 'snow'));
+console.log(search(sample, 'tarp'));
+console.log(search(sample, 'gauge'));
+console.log(search(sample, 'farm'));
+console.log(search(sample, 'skate'));
+
+// function search(item) {
+//   for (i=0; i<=sample.length-1; i++) {
+//     if (sample[i] === item) {
+//       return true
 //     }
-//     else return false;
+//     return false
 //   }
 // }
-// console.log('car', words);
-// console.log('teleporter', words);
+//https://stackoverflow.com/questions/237104/how-do-i-check-if-an-array-includes-a-value-in-javascript
+
 // ----------------------
 // Stretch Goals
 // ----------------------
