@@ -59,7 +59,7 @@ console.log(getLast(words));
 let sample = ['sleep','skate','snow','paper','gauge'];
 
 
-function search(list, item) {
+function find(item, list) {
     for (index = 0; index < list.length; index += 1) {
       if (list[index] === item) {
         return true;
@@ -68,13 +68,13 @@ function search(list, item) {
     return false;
 }
 ///browser test fails but function appears to work.
-console.log(search(sample, 'snow'));
-console.log(search(sample, 'tarp'));
-console.log(search(sample, 'gauge'));
-console.log(search(sample, 'farm'));
-console.log(search(sample, 'skate'));
-console.log(search(words, 'bait'));
-console.log(search(words, 'telephone'));
+console.log(find('snow', sample));
+console.log(find('tarp', sample));
+console.log(find('gauge', sample));
+console.log(find('farm', sample));
+console.log(find('skate', sample));
+console.log(find('blue', sample));
+console.log(find('telephone', sample));
 // function search(item) {
 //   for (i=0; i<=sample.length-1; i++) {
 //     if (sample[i] === item) {
@@ -90,9 +90,18 @@ console.log(search(words, 'telephone'));
 // ----------------------
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
-// function isFirstLetter(letter, string) {
-//     for ()
-// }
+let alpha = 'one'
+let beta = 'two'
+let gamma = 'three'
+
+function isFirstLetter(letter, string) {
+    while (string[0] === letter) {
+      return true
+    }
+}
+console.log(a, alpha);
+console.log(a, beta);
+console.log(o, alpha);
 
 
 // 9. Function to return the sum of all numbers in an array
