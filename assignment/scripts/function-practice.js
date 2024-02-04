@@ -98,10 +98,11 @@ function isFirstLetter(letter, string) {
     while (string[0] === letter) {
       return true
     }
+  return false  
 }
-console.log(a, alpha);
-console.log(a, beta);
-console.log(o, alpha);
+console.log(isFirstLetter('a', alpha));
+console.log(isFirstLetter('a', beta));
+console.log(isFirstLetter('o', alpha));
 
 
 // 9. Function to return the sum of all numbers in an array
