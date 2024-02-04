@@ -106,13 +106,17 @@ console.log(isFirstLetter('o', alpha));
 
 
 // 9. Function to return the sum of all numbers in an array
+let nums = [7, 13, 9, 53, 18]
 function sumAll(array) {
   let sum = 0;
   // TODO: loop to add items
-
-  // TODO: return the sum
+for (i=0; i<nums.length; i++) {
+  sum = nums.at[0] + nums.at[nums.length-1]
 }
-
+  // TODO: return the sum
+  return sum
+}
+console.log(sumAll(nums));
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
