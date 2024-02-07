@@ -110,8 +110,8 @@ let nums = [7, 13, 9, 53, 18]
 function sumAll(array) {
   let sum = 0;
   // TODO: loop to add items
-for (i=0; i<nums.length; i++) {
-  sum = nums.at[0] + nums.at[nums.length-1]
+for (i=0; i<array.length; i++) {
+/// thought it would be using array.reduce() but couldnt figure out how to get it to work
 }
   // TODO: return the sum
   return sum
